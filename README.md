@@ -1,8 +1,3 @@
-## Proyecto Para la busqueda de Pokemons y la obtención de datos relevantes de cada uno de ellos.
-
-  ## Nota : `Es posible que para algunos Pokemons no esté disponible su respectiva imagen`
-
-
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

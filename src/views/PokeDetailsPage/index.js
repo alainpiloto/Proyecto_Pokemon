@@ -24,7 +24,7 @@ const PokeDetailsPage = () => {
 
     return (
         <div>
-            <img src="../images/mew-home.png"/>
+            
             {hasError ? <ErrorMessage message={errorMessage}/> : isLoading ? <Spinner /> : <PokeDetails {...pokemonDetails} /> }
         </div>
     )

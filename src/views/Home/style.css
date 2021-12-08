@@ -1,0 +1,102 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    background-color: #000B20;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-home {
+    width: 545px;
+}
+
+.mew-img {
+    position: absolute;
+    top : 0;
+    left: -15px;
+}
+
+input {  
+    border-radius: 10px;
+    margin-top: 2rem;
+    width: 350px;
+    height: 35px;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+    font-size: 15px;
+}
+
+.pikachu-img {
+    
+    width: 280px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.aviso {
+    align-self: flex-start;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 2rem 2rem;
+    font-weight: 400;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+button {
+    margin-top: 1.5rem;
+    background-color: #FEC10E;
+    color: #1D2A59;
+    width: 90px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    
+}
+
+
+@media (max-width: 360px) {
+    .mew-img {
+        width: 200px;
+    }
+    .titulo-home {
+        width: 250px;
+    }
+    .pikachu-img {
+        width: 130px;
+    }
+    input {
+        width: 270px;
+    }
+    .aviso {
+        font-size: 8px;
+        margin: 0.5rem;
+
+    }
+}
+
+@media (min-width : 361px) and (max-width: 600px) {
+    .mew-img {
+        width: 250px;
+    }
+    .titulo-home {
+        width: 350px;
+    }
+    .pikachu-img {
+        width: 130px;
+    }
+    .aviso {
+        font-size: 8px;
+
+    }
+  }
