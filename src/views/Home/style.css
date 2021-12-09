@@ -1,3 +1,9 @@
+@keyframes floating {
+    0% {top : 0} 
+    50% {top : 15px}
+    100% {top: 0;}
+    }
+
 .home {
     display: flex;
     flex-direction: column;
@@ -20,6 +26,9 @@
 }
 
 .mew-img {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count:infinite; 
     position: absolute;
     top : 0;
     left: -15px;
@@ -61,9 +70,13 @@ button {
     height: 40px;
     border: none;
     border-radius: 15px;
-    
+    text-decoration: none;
+    font-weight: 700;
 }
 
+.disabled {
+    background-color: #a17c0d;
+}
 
 @media (max-width: 360px) {
     .mew-img {
@@ -99,4 +112,20 @@ button {
         font-size: 8px;
 
     }
+  }
+
+  .pokemon-name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 0.5rem ;
+      border: 1px solid #fff;
+      padding: 1rem;
+      color: aliceblue;
+  }
+  
+  .pokemon-name button {
+      margin: 0;
   }

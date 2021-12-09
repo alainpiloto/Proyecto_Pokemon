@@ -27,6 +27,16 @@ const usePokemonsStore = create((set, get) => ({
         }
         
     },
+    getPokemon : async (pokemon) => {
+        try {
+            
+            const pokemonsData = await apiCall({url: `https://pokeapi.co/api/v2/pokemon/${pokemon}`})
+            set({pokemonFound : pokemonsData})
+            
+        } catch (error) {
+            set({hasError : true, errorMessage : "Ha ocurrido un error al intentar descargar el Pokemon"})
+        }
+    },
     pokemons : [],
     pokemonDetails : {},
     isLoading : false,

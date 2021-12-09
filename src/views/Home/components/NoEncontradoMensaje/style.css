@@ -1,0 +1,26 @@
+.container-msj-error {
+    display: flex;
+    flex-direction: row;
+    background-color: #5B98A6;
+    width: 60%;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+img.psyduck{
+    width: 80px;
+    align-self: center;
+}
+
+img.close-icon {
+    align-self: flex-start;
+}
+
+.container-msj-error p {
+    color: aliceblue;
+    margin: 2rem;
+    font-weight: 700;
+}
+
+
