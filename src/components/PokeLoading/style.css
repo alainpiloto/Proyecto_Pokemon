@@ -1,0 +1,90 @@
+.scale {
+    animation: scale 1s infinite
+    }
+  
+ 
+  .pokeball {
+      height: 250px;
+      width: 250px;
+      border: 13px solid #383b4f;
+      border-radius: 50%;
+      background-image: linear-gradient(
+        #f51939 125px,
+        white 125px
+      );
+      position: relative;
+      animation : load 1s infinite;
+      
+  }
+
+  
+
+  @keyframes scale{
+    0% {
+      
+      transform : scale(0.5)
+    }
+    100% {
+      transform : scale(0.5)
+    }
+  }
+  @keyframes load{
+      
+   0% { transform: translate(2px, 2px) rotate(0deg); 
+    
+    }
+    10% { transform: translate(-2px, -2px) rotate(-2deg); }
+    20% { transform: translate(-3px, 0px) rotate(2deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(2deg); }
+    50% { transform: translate(-2px, 2px) rotate(-2deg); }
+    60% { transform: translate(-3px, 2px) rotate(0deg); }
+    70% { transform: translate(3px, 2px) rotate(-2deg); }
+    80% { transform: translate(-2px, -2px) rotate(2deg); }
+    90% { transform: translate(2px, 2px) rotate(0deg); }
+    100% { transform: translate(2px, -2px) rotate(-2deg);
+    }
+    
+  }
+  
+  @keyframes scale-mobile {
+    0% {
+      
+      transform : scale(0.3)
+    }
+    100% {
+      transform : scale(0.3)
+    }
+  }
+
+
+  @media (max-width : 420px) {
+    .scale {
+      animation: scale-mobile 1s infinite;
+    }
+  }
+  .pokeball:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 250px;
+    background-color: #383b4f;
+    top: 112.5px
+  }
+  
+  .pokeball:after {
+    position: absolute;
+    content: "";
+    height: 90px;
+    width: 90px;
+    background-image: radial-gradient(
+      #ffffff 0px, #ffffff 10px,
+      #383b4f 10px, #383b4f 15px,
+      #ffffff 15px, #ffffff 32px,
+      #383b4f 32px
+      );
+  /*   background-color: #383b4f; */
+    border-radius: 50%;
+    top: 80px;
+    left: 80px;
+  }

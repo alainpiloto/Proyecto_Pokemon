@@ -1,0 +1,8 @@
+.body-details {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000B20;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}

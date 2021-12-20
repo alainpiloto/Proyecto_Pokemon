@@ -1,0 +1,166 @@
+* {
+    background-size: cover;
+
+}
+
+.general-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    }
+
+.pokeball-img {
+    position: relative;
+    top: -35px;
+    left: -10px;
+    width: 100px;
+
+}
+
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    color: rgb(0, 4, 26);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.name-container {
+    border-radius: 50px 10px 50px 10px;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    height: 5rem;
+    background-color: #FEC10E;
+}
+
+.name-id {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 2rem 0 1rem;
+    
+}
+
+.name-id h2 {
+    text-transform: capitalize;
+}
+
+.Info-container {
+    
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.caracteristicas-container {
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #4DB6E8 ;
+    width: 400px;
+}
+
+.info-basica-container div{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
+.info-basica-container div p {
+    white-space: pre;
+    line-height: 2rem;
+    margin: 0.5rem 0 1rem 2rem;
+    font-size: 1.3rem;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-img {
+    width: 80%;
+}
+
+.Estadisticas-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.Estadisticas-container p{
+    white-space: pre;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    margin: 0.5rem 1rem 0.5rem 0.5rem;
+    line-height: 2rem;
+}
+
+span {
+    
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: rgb(0, 4, 26);
+}
+
+.loading-container {
+    width: 475px;
+    height: 466px;
+    display: grid;
+    place-content: center;
+}
+@media (max-width: 420px) {
+    .pokemon-img {
+        width: 50%;
+    }
+
+    .Info-container {
+        justify-content: center;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .caracteristicas-container {
+        width: 80%;
+        
+    }
+    span{
+        font-size: 1.2rem;
+    }
+    
+    .name-container {
+        width: 80%;
+        height: 3rem;
+    }
+    .pokeball-img {
+        top: -20px;
+        width: 70px;
+    }
+
+    .Estadisticas-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.5rem;
+    }
+    .loading-container {
+        width: 200px;
+        height: 200px;
+        
+    }
+}

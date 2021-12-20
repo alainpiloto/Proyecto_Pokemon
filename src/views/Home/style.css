@@ -34,7 +34,8 @@
     left: -15px;
 }
 
-input {  
+input {
+    border: 1px solid rgba(38, 56, 78, 0.418);
     border-radius: 10px;
     margin-top: 2rem;
     width: 350px;
@@ -42,6 +43,16 @@ input {
     padding-left: 1rem;
     padding-right: 0.5rem;
     font-size: 15px;
+}
+
+.nombre-pokebola {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nombre-pokebola p {
+    margin-left: 0.5rem;
 }
 
 .pikachu-img {
@@ -62,7 +73,7 @@ input {
     color: aliceblue;
 }
 
-button {
+.search-button {
     margin-top: 1.5rem;
     background-color: #FEC10E;
     color: #1D2A59;
@@ -72,6 +83,7 @@ button {
     border-radius: 15px;
     text-decoration: none;
     font-weight: 700;
+    
 }
 
 .disabled {
@@ -89,13 +101,21 @@ button {
         width: 130px;
     }
     input {
+        
         width: 270px;
+    }
+    .search-button {
+        border-radius: 10px;
+        height: 30px;
+        width: 70px;
+        font-size: 10px;
     }
     .aviso {
         font-size: 8px;
         margin: 0.5rem;
-
     }
+
+    
 }
 
 @media (min-width : 361px) and (max-width: 600px) {
@@ -115,6 +135,7 @@ button {
   }
 
   .pokemon-name {
+      background-color: #1d2a597a;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -124,8 +145,30 @@ button {
       border: 1px solid #fff;
       padding: 1rem;
       color: aliceblue;
+      border-color: #ffffff;
+
   }
   
-  .pokemon-name button {
-      margin: 0;
+    .pokemon-name button {
+        margin-top: 0rem;
+        color: #1d2a59;
+        width: 90px;
+        height: 40px;
+        border: none;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        
+        margin: 0;
+        background-color: #67CBA9;
+      
+    }
+    
+    .pokemon-name button:hover {
+        cursor: pointer;
+        background-color: #76e9c2;
+  }
+
+  .pokemon-name a {
+      text-decoration: none;
   }

@@ -23,4 +23,21 @@ img.close-icon {
     font-weight: 700;
 }
 
+@media (max-width: 420px) {
+    .container-msj-error {
+        padding: 0.5rem;
+        width: 80%;
+    }
+    
+    .container-msj-error p {
+        font-size: 10px;
+        margin: 0.5rem;
+    }
+    img.psyduck {
+        width: 60px;
+        
+    }
+    
+}
+
 

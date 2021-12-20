@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
-import ErrorMessage from "../../components/ErrorMessage";
+import pokebola from '../../images/pokebola.png'
 import mewHome from "../../images/mewHome.png"
 import titulo from "../../images/tituloPokemon.png"
 import pikachu from "../../images/pikachu.png"
 import "./style.css"
+import backgroundImg from '../../images/pokemon-city.png'
 import { Link } from "react-router-dom";
 
 import usePokemonsStore from "../../zustand/stores/pokemons";
 import NoEncontradoMensaje from "./components/NoEncontradoMensaje";
-// import PokemonList from "./components/PokemontList"
 
 const Home = () => {
     const {getPokemons, pokemons, } = usePokemonsStore( state => ({
@@ -22,18 +22,13 @@ const Home = () => {
        
       // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [] )
-    console.log(pokemons)
     const [pokemonSearched, setPokemonSearched] = useState('')
     const [pokemonFound, setPokemonFounded] = useState({});
     const [id, setId] = useState('');
     const [notFound, setNotFound] = useState(undefined)
-    // const searchPokemon = ({target : {value}}) => {
-    //   setPokemonSearched(value);
-    //   console.log(pokemonSearched)
-    // }
-    const findPokemon =  () => {
+   const findPokemon =  () => {
       const result = pokemons.find(el => 
-        el.name === pokemonSearched
+        el.name === pokemonSearched.toLowerCase().trim()
       )
       if(result === undefined) {
         setNotFound(true)
@@ -45,23 +40,26 @@ const Home = () => {
       
     }
 
-    
-    
     return (
-      <div className="home">
+      <div className="home" style={{ backgroundImage: `url(${backgroundImg})`,
+      backgroundRepeat: 'no-repeat' }}>
 
           <img src={mewHome} alt="mew pokemon" className="mew-img"/>
           <div className="container">
             <img src={titulo} alt="titulo pagina" className="titulo-home"/>
-            <input type="search" onChange={({target : {value}}) => {setPokemonSearched(value); console.log(pokemonSearched)}} placeholder="Ingrese el nombre de su Pokémon" />
-            <button className={ pokemonSearched.length < 3 ? "disabled" : undefined} onClick={findPokemon} disabled={pokemonSearched.length < 3 && true} >Encontrar</button>
+            <input type="search" onChange={({target : {value}}) => {setPokemonSearched(value)}} placeholder="Ingrese el nombre de su Pokémon" />
+            <button className={ `${pokemonSearched.length < 3 ? "disabled" : undefined} search-button`} onClick={findPokemon} disabled={pokemonSearched.length < 3 && true} >Encontrar</button>
           {notFound === true && <NoEncontradoMensaje setNotFound={setNotFound}/>}  
           {notFound === false && <div className="pokemon-name">
-            <p>{pokemonFound.name.charAt(0).toUpperCase() + pokemonFound.name.slice(1)}</p>
+            <div className="nombre-pokebola">
+              <img src={pokebola} alt="pokebola"/>
+              <p>{pokemonFound.name.charAt(0).toUpperCase() + pokemonFound.name.slice(1)}</p>
+            </div>
             {notFound === true ? undefined : 
-              <button>
-                <Link to={`/pokemon/${id}`}>Ver</Link>
-              </button> }
+              <Link to={`/pokemon/${id}`}>
+                <button onPointerOver="hand">Ver</button> 
+              </Link>
+              }
           </div>
           }
           
