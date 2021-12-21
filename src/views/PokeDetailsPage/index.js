@@ -6,6 +6,7 @@ import usePokemonsStore from "../../zustand/stores/pokemons";
 import PokeDetails from "./components/PokeDetails";
 import './style.css'
 import backgroundImg from '../../images/pokemon-city-dark.png'
+import HiddenButton from "../../components/Hidden-button";
 
 
 
@@ -26,7 +27,7 @@ const PokeDetailsPage = () => {
 
     return (
         <div className="body-details" style={{backgroundImage : `url(${backgroundImg})`}}>
-            
+            <HiddenButton />
             {hasError ? <ErrorMessage message={errorMessage}/> : isLoading ? <Spinner /> : <PokeDetails {...pokemonDetails} /> }
         </div>
     )

@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+    color: #000B20;
+}
+.hidden-button {
+    
+    font-weight: 700;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row;
+    position: absolute;
+    background-color: #ffffff;
+    top : 80px;
+    left: -140px;
+    width: 200px;
+    height: 70px;
+    border-radius: 0 5px 35px 0;
+    transition: left 1s;
+}
+
+.search-icon {
+    margin: 0 0.5rem 0 1rem;
+    width: 40px;
+}
+
+.hidden-button:hover {
+    left: 0;
+}

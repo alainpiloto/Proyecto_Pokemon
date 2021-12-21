@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { useParams } from "react-router"
 import "./style.css"
 import pokeball from "../../../../images/pokebola-145x146.png"
