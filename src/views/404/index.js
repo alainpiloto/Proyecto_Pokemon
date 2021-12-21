@@ -8,7 +8,7 @@ const Route404 = () => {
             <HiddenButton/>
             <div className='container-error'>
                 <img className="psyduck-img" src={psyduck} alt="psyduck-img"/>
-                <h2 className='error-message'>Lo Siento, la Página que buscas no está disponible o no existe</h2>
+                <h2 className='error-message'>¡Lo Siento!, la Página que buscas no está disponible o no existe...</h2>
             </div>
         </div>
     )

@@ -31,3 +31,21 @@ body {
     font-size: 2rem;
     align-self: center;
 }
+
+@media (max-width: 800px) {
+    .psyduck-img {
+   
+        width: 100px; 
+    }
+
+    .container-error {
+        flex-direction: column;
+        width: 280px;
+    }    
+
+    .error-message {
+        font-size: 1rem;
+        margin: 1rem;
+        left: 0px;
+    }
+}

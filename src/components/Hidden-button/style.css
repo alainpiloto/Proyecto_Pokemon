@@ -27,3 +27,13 @@ a {
 .hidden-button:hover {
     left: 0;
 }
+
+@media (max-width: 800px) {
+    .hidden-button {
+        top: 120px;
+        left: -100px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        width: 160px;
+    }
+}
