@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             {notFound === true ? undefined : 
               <Link to={`/pokemon/${id}`}>
-                <button onPointerOver="hand">Ver</button> 
+                <button >Ver</button> 
               </Link>
               }
           </div>

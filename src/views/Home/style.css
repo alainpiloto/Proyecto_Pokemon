@@ -83,6 +83,8 @@ input {
     border-radius: 15px;
     text-decoration: none;
     font-weight: 700;
+    cursor: pointer;
+    
     
 }
 
