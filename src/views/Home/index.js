@@ -4,7 +4,7 @@ import mewHome from "../../images/mewHome.png"
 import titulo from "../../images/tituloPokemon.png"
 import pikachu from "../../images/pikachu.png"
 import "./style.css"
-import backgroundImg from '../../images/pokemon-city.png'
+import backgroundImg from '../../images/pokemon-city.webp'
 import { Link } from "react-router-dom";
 
 import usePokemonsStore from "../../zustand/stores/pokemons";

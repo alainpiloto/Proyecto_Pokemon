@@ -5,7 +5,7 @@ import Spinner from "../../components/Loading";
 import usePokemonsStore from "../../zustand/stores/pokemons";
 import PokeDetails from "./components/PokeDetails";
 import './style.css'
-import backgroundImg from '../../images/pokemon-city-dark.png'
+import backgroundImg from '../../images/pokemon-city-dark.webp'
 import HiddenButton from "../../components/Hidden-button";
 
 
