@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import pokebola from '../../images/pokebola.png'
-import mewHome from "../../images/mewHome.png"
-import titulo from "../../images/tituloPokemon.png"
-import pikachu from "../../images/pikachu.png"
+import pokebola from '../../images/pokebola.webp'
+import mewHome from "../../images/mewHome.webp"
+import titulo from "../../images/tituloPokemon.webp"
+import pikachu from "../../images/pikachu.webp"
 import "./style.css"
 import backgroundImg from '../../images/pokemon-city.webp'
 import { Link } from "react-router-dom";

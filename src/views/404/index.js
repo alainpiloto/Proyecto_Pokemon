@@ -1,4 +1,4 @@
-import psyduck from "../../images/upss.jpg"
+import psyduck from "../../images/upss.webp"
 import './style.css'
 import HiddenButton from '../../components/Hidden-button'
 const Route404 = () => {

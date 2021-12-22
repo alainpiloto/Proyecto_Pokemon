@@ -1,5 +1,5 @@
 import {Link} from 'react-router-dom'
-import search_icon from '../../images/searh-icon.png'
+import search_icon from '../../images/searh-icon.webp'
 import './style.css'
 
 const HiddenButton = () => {

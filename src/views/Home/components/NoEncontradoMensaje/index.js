@@ -1,6 +1,6 @@
 import './style.css'
-import Psyduck from '../../../../images/patoError.png'
-import close from '../../../../images/close-icon.png'
+import Psyduck from '../../../../images/patoError.webp'
+import close from '../../../../images/close-icon.webp'
 const NoEncontradoMensaje = ({setNotFound}) => {
     return (
         <div className="container-msj-error">

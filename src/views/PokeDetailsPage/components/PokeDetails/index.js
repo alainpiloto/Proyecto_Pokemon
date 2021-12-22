@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useParams } from "react-router"
 import "./style.css"
-import pokeball from "../../../../images/pokebola-145x146.png"
+import pokeball from "../../../../images/pokebola-145x146.webp"
 import PokeLoading from "../../../../components/PokeLoading"
 const PokeDetails = ({name, weight, height, stats}) => {
     
